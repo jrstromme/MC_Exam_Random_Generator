@@ -34,6 +34,7 @@
     "ulem"
     "datetime")
    (TeX-add-symbols
+    '("questionp" 1)
     '("sol" 1)
     "newline"))
  :latex)

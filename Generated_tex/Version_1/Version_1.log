@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.20)  29 JUN 2024 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.20)  29 JUN 2024 10:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,24 +644,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 (./Version_1.aux)
 \openout1 = `Version_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
@@ -672,7 +672,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 74.
+Package hyperref Info: Link coloring ON on input line 79.
 
 (./Version_1.out) (./Version_1.out)
 \@outlinefile=\write3
@@ -738,139 +738,138 @@ e
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104
+.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104
+.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Package exam-randomizechoices Warning: Parsing question 1 on input line 122.
+Package exam-randomizechoices Warning: Parsing question 1 on input line 128.
 
 
-Package exam-randomizechoices Warning: I found 5 choices on input line 122.
+Package exam-randomizechoices Warning: I found 5 choices on input line 128.
 
 
-Package exam-randomizechoices Warning: Randomizing... on input line 122.
+Package exam-randomizechoices Warning: Randomizing... on input line 128.
 
 
-Package exam-randomizechoices Warning: Done randomizing... on input line 122.
+Package exam-randomizechoices Warning: Done randomizing... on input line 128.
 
 
-Package exam-randomizechoices Warning: Parsing question 2 on input line 134.
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 128--129
+[]$[]$ 
+ []
 
 
-Package exam-randomizechoices Warning: I found 5 choices on input line 134.
+Package exam-randomizechoices Warning: Parsing question 2 on input line 141.
 
 
-Package exam-randomizechoices Warning: Randomizing... on input line 134.
+Package exam-randomizechoices Warning: I found 5 choices on input line 141.
 
 
-Package exam-randomizechoices Warning: Done randomizing... on input line 134.
+Package exam-randomizechoices Warning: Randomizing... on input line 141.
 
 
-Package exam-randomizechoices Warning: Parsing question 3 on input line 147.
+Package exam-randomizechoices Warning: Done randomizing... on input line 141.
 
 
-Package exam-randomizechoices Warning: I found 5 choices on input line 147.
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 141--142
+[]$[]$ 
+ []
 
 
-Package exam-randomizechoices Warning: Randomizing... on input line 147.
+Package exam-randomizechoices Warning: Parsing question 3 on input line 157.
 
 
-Package exam-randomizechoices Warning: Done randomizing... on input line 147.
+Package exam-randomizechoices Warning: I found 5 choices on input line 157.
 
 
-Package exam-randomizechoices Warning: Parsing question 4 on input line 162.
+Package exam-randomizechoices Warning: Randomizing... on input line 157.
 
 
-Package exam-randomizechoices Warning: I found 5 choices on input line 162.
+Package exam-randomizechoices Warning: Done randomizing... on input line 157.
 
 
-Package exam-randomizechoices Warning: Randomizing... on input line 162.
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 157--158
+[]$[]$ 
+ []
 
 
-Package exam-randomizechoices Warning: Done randomizing... on input line 162.
+Package exam-randomizechoices Warning: Parsing question 4 on input line 172.
+
+
+Package exam-randomizechoices Warning: I found 5 choices on input line 172.
+
+
+Package exam-randomizechoices Warning: Randomizing... on input line 172.
+
+
+Package exam-randomizechoices Warning: Done randomizing... on input line 172.
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 172--173
+[]$[]$ 
+ []
+
+
+Package exam-randomizechoices Warning: Parsing question 5 on input line 186.
+
+
+Package exam-randomizechoices Warning: I found 5 choices on input line 186.
+
+
+Package exam-randomizechoices Warning: Randomizing... on input line 186.
+
+
+Package exam-randomizechoices Warning: Done randomizing... on input line 186.
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 186--187
+[]$[]$ 
+ []
 
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package exam-randomizechoices Warning: Parsing question 5 on input line 176.
-
-
-Package exam-randomizechoices Warning: I found 5 choices on input line 176.
-
-
-Package exam-randomizechoices Warning: Randomizing... on input line 176.
-
-
-Package exam-randomizechoices Warning: Done randomizing... on input line 176.
-
-[2] [3
-
-]
-
-Package exam-randomizechoices Warning: Writing key table on input line 194.
-
-
-Package exam-randomizechoices Warning: Writing key list to file on input line 1
-96.
-
-\tempfile=\write4
-\openout4 = `testfile.txt'.
-
-
-Package exam-randomizechoices Warning: Writing key list to file on input line 1
-97.
-
-\tempfile=\write5
-\openout5 = `Version_1.keylist'.
-
-
-Package exam-randomizechoices Warning: Saving key list to macro on input line 1
-99.
-
-[4
-
-]
+[2]
 This exam contains 5 questions with 0 parts, 0 subparts, and 0 subsubparts.
 (./Version_1.aux)
 Package rerunfilecheck Info: File `Version_1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18991 strings out of 476025
- 327242 string characters out of 5790017
- 1865388 words of memory out of 5000000
- 39110 multiletter control sequences out of 15000+600000
- 520311 words of font info for 61 fonts, out of 8000000 for 9000
+ 18984 strings out of 476025
+ 327174 string characters out of 5790017
+ 1868388 words of memory out of 5000000
+ 39108 multiletter control sequences out of 15000+600000
+ 520004 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,76p,991b,677s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,10n,76p,991b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Version_1.pdf (4 pages, 88199 bytes).
+Output written on Version_1.pdf (2 pages, 85160 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 39 named destinations out of 1000 (max. 500000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 36 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

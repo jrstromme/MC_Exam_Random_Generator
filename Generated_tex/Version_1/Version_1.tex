@@ -65,10 +65,15 @@
 \firstpagefooter{Page \thepage}{}{Compiled on \today\ at \currenttime}
 \runningheader{}{}{\textit{Exam 1 - Version 1}}
 \runningfooter{Page \thepage}{}{}
+%\runningfooter{Page \thepage}{\iflastpage{\Huge \textbf{End of Exam} }{}}{}
 
 
 %% custom command we can use to easily add explanation to MC questions for Answer Key
 \newcommand{\sol}[1]{{\ifprintanswers \color{red} #1 \fi}}
+
+\newcommand{\questionp}[1]{\begin{minipage}{\textwidth}
+  \question #1
+  \end{minipage}}
 
 
 \begin{document}
@@ -109,7 +114,7 @@
 
 
 %% ! Q4
-\question
+\questionp{
 four: One of these things is not like the others; one of these
 things is not the same. Which one is different?
 
@@ -120,8 +125,9 @@ things is not the same. Which one is different?
 \choice Ringo
 \CorrectChoice Socrates
 \end{randomizechoices}
+}
 
-\question
+\questionp{
 One of these things is not like the others; one of these
 things is not the same. Which one is different?
 
@@ -132,9 +138,10 @@ things is not the same. Which one is different?
 \choice Ringo
 \CorrectChoice Socrates
 \end{randomizechoices}
+}
 
 %% ! Q2
-\question
+\questionp{
 Two: One of these things is not like the others; one of these
 things is not the same. Which one is different?
 
@@ -147,9 +154,10 @@ things is not the same. Which one is different?
 \end{randomizechoices}
 
 \sol{Test!}
+}
 
 %% ! Q1
-\question
+\questionp{
 one: One of these things is not like the others; one of these
 things is not the same. Which one is different?
 
@@ -161,9 +169,10 @@ things is not the same. Which one is different?
 \CorrectChoice Socrates
 \end{randomizechoices}
 \sol{This is an extended explanation of the answer.}
+}
 
 %% ! Q3
-\question
+\questionp{
 three: One of these things is not like the others; one of these
 things is not the same. Which one is different?
 
@@ -174,8 +183,7 @@ things is not the same. Which one is different?
 \choice Ringo
 \CorrectChoice Socrates
 \end{randomizechoices}
-
-\clearpage
+}
 
 %% ! QEND
 
@@ -183,20 +191,15 @@ things is not the same. Which one is different?
 \end{questions}
 
 
-\vspace{5cm}
+% Depending on how spacing is working, can do this here, or uncomment above
+% to have it print in footer on last page only. The problem with that is that
+% in the answers environment, it puts it on last page, which is the key table...
+% However the problem with using the below, is sometimes it may put it on the next
+% page alone? Basically I will hack through this and use either option. If randomization
+% makes both not work sometimes I will have to figure out a different solution
+\vspace*{\fill}
 \Huge \begin{center} \textbf{End of Exam} \end{center}
 
-\clearpage
 
-\section*{Key Table}
-\normalsize
 
-\printkeytable[1-30]%\quad\printkeytable[31-60]\quad\printkeytable[61-83]
-
-\writekeylist[testfile.txt]{\mykeylist}
-\writekeylist{\mykeylist}
-
-\savekeylist[\yesthekeylist]
-
-% {\color{red}\ttfamily\yesthekeylist}
 \end{document}

@@ -33,7 +33,8 @@ def main(nv):
     tf = open("./Master_Template/Master_Template.tex", 'r')
     tfcontent = tf.read()
 
-
+    # NOTE: was having a lot of issues b/c latex uses '/', but this is string escape char... so
+    #    when doing splits, finds, replaces, etc... it was... no bueno so I skirted the issue by avoiding
     # Now split the content in the master tex file using our question break 'keys', which is %% ! Q
     tfcontent = tfcontent.split(r"%% ! Q")
     
@@ -44,7 +45,6 @@ def main(nv):
 
     # manually add back in split characters b/c nothing else is working for me when I do split...
     for i, line in enumerate(tfbody):
-        print(i)
         tfbody[i] = r"%% ! Q" + line
     tffooter = r"%% ! Q" + tffooter
 
@@ -56,6 +56,10 @@ def main(nv):
         tfheader = tfheader.replace(r"\documentclass[answers]{exam}", r"\documentclass[]{exam}")
         
 
+    # Remove key table from non-AK version
+    tffooteranswers = tffooter 
+    tffooter = re.sub(r'section\*\{Key Table\}\s*.*', r'end{document}', tffooter, flags=re.DOTALL)
+    tffooter = tffooter.rstrip().replace("\\clearpage", "") #removes last instance of \clearpage
 
     # Each version needs to have its own random number, so we generate integers between 1 and 100, which will be written in each tex file version:
     L = range(1,101)
@@ -80,7 +84,7 @@ def main(nv):
         os.system("mkdir ./Generated_tex/Version_"+str(i))
  
         #    Write the tex file 
-        texout = tfheaderanswers + flatten(tfbody) + tffooter
+        texout = tfheaderanswers + flatten(tfbody) + tffooteranswers
         tfout = open("./Generated_tex/Version_"+str(i)+"/Version_"+str(i)+".tex", "w")
         tfout.write(texout)
         tfout.close()
