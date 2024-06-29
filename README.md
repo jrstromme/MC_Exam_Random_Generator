@@ -32,6 +32,8 @@
 
       * If you have a very long question and don't care/would want it to wrap across pages, simply use the standard `\question` from the exam package with no brackets.
 
+   3. If you want to add explanations for the answers for a question, you can use `\sol{}`. This is a custom wrapper around the exam class's solution system to print it in RED color.
+
    
    ## Folders:
 
