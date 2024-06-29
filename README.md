@@ -7,27 +7,30 @@
    ## To run:
 
    1. Create your exam questions in Master_Template.tex
-   
-      *  The python program searches for `%% ! Q` to split questions out.
-   
-      * Importantly, before each question that you want to have a random order, you need to make sure it has a comment structure of: `%% ! Q`
-   
-      * If you want a question to group with the one above it. Then simply omit the `!`.
-   
-      * We also need one of these 'cut points' after the last question, so the tex suffix gets separated out. `%% ! QEnd`
-   
 
    2. Test that your master template compiles correctly, both with and without the 'answers' option.
 
-   3. When satisfied, run (put in desired number for `nversions`
+   3. When satisfied, run with desired number of `nversions`
    ```
    python -m generate_exams nversions
    ```
 
    
-   ## A note on creating questions.
+   ## Notes on creating questions.
 
-   Each question should be written within `\questionp{}`. This is a custom command which wraps each question in a minipage so it appears altogether on the same page. If you have a very long question and don't care/would want it to wrap pages, simply use the standard `\question` with no brackets.
+   1. The python program searches for `%% ! Q` to split questions out. Therefore maintaining the proper comment structure is crucial:
+
+      * Importantly, before each question that you want to have a random order, you need to make sure it has a comment structure of: `%% ! Q`
+   
+      * If you want a question to group with the one above it. Then simply omit the `!`.
+   
+      * We also need one of these 'cut points' after the last question, so the tex suffix gets separated out. `%% ! QEnd`
+
+   2. Each question should be written within `\questionp{}`.
+
+      * This is a custom command which wraps each question in a minipage so it appears altogether on the same page.
+
+      * If you have a very long question and don't care/would want it to wrap across pages, simply use the standard `\question` from the exam package with no brackets.
 
    
    ## Folders:
