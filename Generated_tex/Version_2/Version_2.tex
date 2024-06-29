@@ -1,0 +1,202 @@
+%%
+%% exam-randomizechoices.tex
+%%
+%% The newest version of this package should always be available
+%% from GitHub: https://github.com/jesseopdenbrouw/exam-randomizechoices
+%%
+%% This is based on the 'exam' class. And adds in randomized choice ordering.
+
+
+%% Useful notes:
+%%
+%% - If you want to equally distribute the space on a page among several questions (or parts, or subparts, or subsubparts), you
+%%       should type   \vspace{\stretch{1}}  after each of the questions (or parts, etc.) and end the page with \newpage
+%%
+%% - If you want to, you can give each question points, and it will add points together into \numpoints
+%%          (also there is an option for bonus points)
+%%
+%% - A parts environment is available to have a question w/ subparts, but it doesn't make sense to use for my application and
+%%    bubble sheet limitations
+%%
+%% - To include explanations in the answers, can use \ifprintanswers {write stuff here, include figs, etc etc} \fi. 
+
+\documentclass[]{exam}
+
+\usepackage{parskip}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{mathtools}
+\usepackage[a4paper]{geometry}
+
+\usepackage[debug,randomize,nokeeplast]{exam-randomizechoices}
+\setrandomizerseed{10}
+
+% some of my usual packages I use from time to time
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{array}   % write arrays in math mode
+\usepackage{graphicx} % embed graphics
+\usepackage{hyperref}
+\usepackage{mathtools} 
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{subfloat}   %figure 1a 1b with \begin{subfigures}
+\usepackage{ulem} %underlining and strikethroughs
+\usepackage[yyyymmdd,hhmmss]{datetime}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\arraybackslash\hspace{0pt}}m{#1}} %used for array package
+\newcolumntype{C}[1]{>{\centering\let\newline\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{amssymb}
+\checkboxchar{$\square$}
+\checkedchar{$\raisebox{0.3ex}{\checkmark}\hspace{-0.95em}\square$}
+
+
+
+%% Setting up for exam pkg
+\CorrectChoiceEmphasis{\color{red}\slshape}
+% \SolutionEmphasis{\color{red}} solution environ not working for me so doing custom thing below
+% \unframedsolutions
+
+\pagestyle{headandfoot}
+\firstpageheader{}{\color{red} \Large \ifprintanswers \textbf{ANSWER KEY} \fi}{}
+\firstpagefooter{Page \thepage}{}{Compiled on \today\ at \currenttime}
+\runningheader{}{}{\textit{Exam 1 - Version 1}}
+\runningfooter{Page \thepage}{}{}
+
+
+%% custom command we can use to easily add explanation to MC questions for Answer Key
+\newcommand{\sol}[1]{{\ifprintanswers \color{red} #1 \fi}}
+
+
+\begin{document}
+
+\makebox[\textwidth]{ \hspace{2.3in} Name:\enspace\hrulefill}
+
+\vspace{0.2in}
+
+\huge \noindent \textbf{Midterm 1} \Large (\textit{Version 1}) \large  \strut\hfill \textbf{Instructor: John Stromme} \\
+\numquestions\ Questions \numquestions\ Points  \strut\hfill  \textit{Vanderbilt University, Econ 3035} \\ \\
+
+\normalsize
+
+%\item Total points: \numpoints
+%\item 
+%\end{itemize}
+
+\begin{center}
+  \fbox{\fbox{\parbox{4.5in}{ \centering \textbf{Instructions:}
+\vspace{1mm}
+        \begin{enumerate}
+        \item Write Exam Version on Bubble Sheet
+        \item Write Name above \textit{and} on Bubble Sheet
+        \item Turn in both Bubble Sheet and this Exam when finished
+        \end{enumerate}
+        \vspace{1mm}
+\textbf{Vanderbilt's Honor Code governs/applies to this exam}
+}}}
+\end{center}
+
+
+\vspace{0.3in}
+
+
+\begin{questions}
+
+
+
+
+%% ! Q1
+\question
+one: One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizechoices}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{randomizechoices}
+\sol{This is an extended explanation of the answer.}
+
+%% ! Q4
+\question
+four: One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizechoices}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{randomizechoices}
+
+\question
+One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizechoices}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{randomizechoices}
+
+%% ! Q2
+\question
+Two: One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizechoices}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{randomizechoices}
+
+\sol{Test!}
+
+%% ! Q3
+\question
+three: One of these things is not like the others; one of these
+things is not the same. Which one is different?
+
+\begin{randomizechoices}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\CorrectChoice Socrates
+\end{randomizechoices}
+
+\clearpage
+
+%% ! QEND
+
+
+\end{questions}
+
+
+\vspace{5cm}
+\Huge \begin{center} \textbf{End of Exam} \end{center}
+
+\clearpage
+
+\section*{Key Table}
+\normalsize
+
+\printkeytable[1-30]%\quad\printkeytable[31-60]\quad\printkeytable[61-83]
+
+\writekeylist[testfile.txt]{\mykeylist}
+\writekeylist{\mykeylist}
+
+\savekeylist[\yesthekeylist]
+
+% {\color{red}\ttfamily\yesthekeylist}
+\end{document}
