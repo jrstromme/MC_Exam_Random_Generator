@@ -1,5 +1,8 @@
 # MC_Exam_Random_Generator
 
+   This package allows for question order randomization on top of two existing latex packages: The `exam` document class and the `exam-randomizechoices` package. The latter only randomizes answer ordering within a multiple choice question, whereas I wanted to also randomize question order. The python code here adds in this extra level of randomization, and will call latex system commands to do so.
+
+   Python was used as it was the easiest and quickest way to code this randomization. It would be cleaner to have a latex package but I do not know how to write TeX macros. Python is easy to use for this application as it can simply take an existing tex doc, and randomize some of the internal text, creating new tex files. The caveat is that it is a bit "hacky".
 
    ## To run:
 
